@@ -32,6 +32,12 @@ const route = useRoute();
   padding-right: 100px;
 }
 
+@media (max-width: 1024px) {
+  .parentDiv nav {
+  padding-right: 10px;
+}
+}
+
 .router-link-active span {
   text-decoration: underline;
 }
@@ -63,10 +69,12 @@ const route = useRoute();
 
 
 nav {
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
   background-color: transparent;
   float:right;
+  padding-top: 20px;
+  white-space: nowrap;
 }
 
 nav a.router-link-exact-active {
@@ -87,21 +95,22 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 512px) {
   header {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
 
-
-
   nav {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
+    font-size: 1rem;
+    display: inline-block;
+    float: none;
+    padding-top: 20px;
   }
 }
 </style>

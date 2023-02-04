@@ -35,9 +35,7 @@ const title = images[idx].title;
 
     </video>
   </div>
-  <div>
     <RouterView />
-  </div>
 </div>
 </template>
 
@@ -46,6 +44,13 @@ const title = images[idx].title;
 .parentDiv {
   padding-left: 100px;
   padding-right: 100px;
+}
+
+@media (max-width: 1024px) {
+  .parentDiv {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .page {
@@ -61,6 +66,14 @@ const title = images[idx].title;
   width: 100%;
 }
 
+@media screen and (max-width: 1024px){
+  .navbar {
+  overflow: hidden;
+  background-color: transparent;
+  top: 0;
+  width: 100%;
+}
+}
 
 .title {
   min-height: 300px;
