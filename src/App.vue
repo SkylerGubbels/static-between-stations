@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import NavTabs from './components/NavTabs.vue';
+import Socials from './components/Socials.vue';
 
 function randomIntFromInterval(min: number, max: number) { // min and max included 
   return Math.floor(Math.random() * (max - min + 1) + min)
@@ -35,7 +36,7 @@ const title = images[idx].title;
 
     </video>
   </div>
-    <RouterView />
+  <RouterView />
 </div>
 </template>
 
@@ -61,7 +62,7 @@ const title = images[idx].title;
 .navbar {
   overflow: hidden;
   background-color: transparent;
-  position: fixed;
+  position: static;
   top: 0;
   width: 100%;
 }
@@ -124,7 +125,6 @@ nav a:first-of-type {
 @media (min-width: 1024px) {
   header {
     display: flex;
-    place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
 

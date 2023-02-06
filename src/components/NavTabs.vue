@@ -14,32 +14,24 @@ const route = useRoute();
 </script>
 
 <template>
-  <div class="parentDiv">
+  <div>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One">
       <nav>
         <RouterLink to="/"><span class="navFont">Home</span></RouterLink>
         <RouterLink to="/music"><span class="navFont">Music</span></RouterLink>
-        <RouterLink to="/music"><span class="navFont">Videos</span></RouterLink>
+        <RouterLink to="/videos"><span class="navFont">Videos</span></RouterLink>
         <RouterLink to="/assets"><span class="navFont">Free Assets</span></RouterLink>
-        <RouterLink to="/contact"><span class="navFont">Contact</span></RouterLink>
      </nav>
 </div>
 </template>
 
 <style scoped>
 
-.parentDiv nav {
-  padding-right: 100px;
-}
 
-@media (max-width: 1024px) {
-  .parentDiv nav {
-  padding-right: 10px;
-}
-}
 
 .router-link-active span {
   text-decoration: underline;
+  color:rgb(190, 190, 190);
 }
 
 .navFont {
@@ -69,7 +61,7 @@ const route = useRoute();
 
 
 nav {
-  font-size: 16px;
+  font-size: 24px;
   text-align: center;
   background-color: transparent;
   float:right;
@@ -98,7 +90,6 @@ nav a:first-of-type {
 @media (max-width: 512px) {
   header {
     display: flex;
-    place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
 
@@ -111,6 +102,7 @@ nav a:first-of-type {
     display: inline-block;
     float: none;
     padding-top: 20px;
+    font-size: 16px;
   }
 }
 </style>
