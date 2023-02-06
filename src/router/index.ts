@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/videos',
       name: 'videos',
       component: () => import('../components/Videos.vue')
+    },
+    {
+      path: '/assets',
+      name: 'assets',
+      component: () => import('../components/FreeAssets.vue') 
     }
   ]
 })
