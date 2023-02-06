@@ -1,0 +1,1 @@
+import{_ as s,o,c as t,p as _,b as c,e as a}from"./index-2ef3cbc5.js";const n={},d=e=>(_("data-v-9445839b"),e=e(),c(),e),p={class:"padding"},r=d(()=>a("h1",null,"Coming soon",-1)),i=[r];function l(e,h){return o(),t("div",p,i)}const f=s(n,[["render",l],["__scopeId","data-v-9445839b"]]);export{f as default};
