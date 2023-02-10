@@ -31,8 +31,9 @@ const title = images[idx].title;
     </div>
     <div class="video">
       <!-- https://codepen.io/dudleystorey/pen/BaPeZP-->
-      <video poster="\src\assets\backgrounds\planetarium.png" id="bgvid" playsinline autoplay muted loop>
-      <source src="src\assets\videos\PlanetariumNoFish2k0000-0151.mp4" type="video/mp4">
+      <video poster="/src/assets/backgrounds/planetarium.png" id="bgvid" playsinline autoplay muted loop>
+      <source  src="/src/assets/videos/backgroundwebm.webm" type="video/webm">
+      <source src="/src/assets/videos/backgroundvid.mp4" type="video/mp4">
 
     </video>
   </div>
