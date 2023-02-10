@@ -1,11 +1,12 @@
 <script setup lang="ts">
 
+import Gallery from './Gallery.vue';
 
 </script>
 
 <template>
     <div class="padding">
-        <h1>Coming soon</h1>
+      <Gallery/>
     </div>
 </template>
 
