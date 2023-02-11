@@ -6,7 +6,7 @@ import Socials from '@/components/Socials.vue';
 <template>
   <div class="titleRight">
     <h1>Static<br>Between<br>Stations</h1>
-    <div class="newSingle"><span>New single // Take a Deep Breath</span></div>
+    <div class="newSingle"><span>New single // <a href="https://www.youtube.com/watch?v=vM3dTFFFvrM">Take a Deep Breath</a></span></div>
   </div>
 
   <Socials class="fixed"/>

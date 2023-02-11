@@ -1,6 +1,16 @@
 <script setup lang="ts">
 import Socials from './Socials.vue';
 
+import takeadeepbreath_wav from "@/assets/music/takeadeepbreathwav.wav";
+import takeadeepbreath_mp3 from "@/assets/music/takeadeepbreathmp3.mp3";
+import takeadeepbreath__i_wav from "@/assets/music/takeadeepbreathinstrumentalwav.wav";
+import takeadeepbreath_i_mp3 from "@/assets/music/takeadeepbreathinstrumentalmp3.mp3";
+
+import sinkintome_wav from "@/assets/music/sinkintomewav.wav";
+import sinkintome_mp3 from "@/assets/music/sinkintomemp3.mp3";
+import sinkintome_i_wav from "@/assets/music/sinkintomeinstrumentalwav.wav";
+import sinkintome_i_mp3 from "@/assets/music/sinkintomeinstrumentalmp3.mp3";
+
 
 
 </script>
@@ -14,16 +24,16 @@ import Socials from './Socials.vue';
             <img src="@/assets/albums/takeadeepbreath.png"/>
             <div>
                 <h1>Take a Deep Breath</h1>
-                <p>Full song download: <a>wav</a> // <a>mp3</a></p>
-                <p>Instrumental: <a>wav</a> // <a>mp3</a></p>
+                <p>Full song download: <a :href="takeadeepbreath_wav" download>wav</a> // <a :href="takeadeepbreath_mp3" download>mp3</a></p>
+                <p>Instrumental: <a :href="takeadeepbreath__i_wav" download>wav</a> // <a :href="takeadeepbreath_i_mp3" download>mp3</a></p>
             </div>
         </div>
         <div class="content song">
             <img src="@/assets/albums/sinkintome.png"/>
             <div>
                 <h1>Sink Into Me</h1>
-                <p>Full song download: <a>wav</a> // <a>mp3</a></p>
-                <p>Instrumental: <a>wav</a> // <a>mp3</a></p>
+                <p>Full song download: <a :href="sinkintome_wav" download>wav</a> // <a :href="sinkintome_mp3" download>mp3</a></p>
+                <p>Instrumental: <a :href="sinkintome_i_wav" download>wav</a> // <a :href="sinkintome_i_mp3" download>mp3</a></p>
             </div>
         </div>
     </div>

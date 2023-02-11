@@ -1,14 +1,29 @@
 <script setup lang="ts">
 
 import {ref} from "vue";
+import icebox from "@/assets/sketchfab/icebox.png"
+import cinderBlocks from "@/assets/sketchfab/Cinderblocks.png"
+import ruinsFire from "@/assets/sketchfab/RuinsFire.png"
+import train from "@/assets/sketchfab/Train.png"
+import wolfskull from "@/assets/sketchfab/wolfskull.png"
+import campfirebeach from "@/assets/sketchfab/campfirebeach.png"
+import kitchen from "@/assets/sketchfab/kitchen.png"
+import ruinsfloor from "@/assets/sketchfab/ruinsfloor.png"
+import shelves from "@/assets/sketchfab/shelves.png"
+import buildings from "@/assets/sketchfab/buildings.png"
+
 
 const photos: any = [
-    {image: "src/assets/sketchfab/icebox.png", embed: "https://sketchfab.com/models/f96b503849f4477ea1501448d41f361a/embed?autostart=1&dnt=1"},
-    {image: "src/assets/sketchfab/Cinderblocks.png", embed: "https://sketchfab.com/models/156888bf9f8f4ff69f347d6505f45b4f/embed?dnt=1&autostart=1"},
-    {image: "src/assets/sketchfab/RuinsFire.png", embed: "https://sketchfab.com/models/4a6640785fac44bda0567b0dda2066e8/embed?autostart=1&dnt=1"},
-    {image: "src/assets/sketchfab/Train.png", embed: "https://sketchfab.com/models/7d3a68adca2f46c198ca075f77b580d4/embed?autostart=1&dnt=1"},
-    {image: "src/assets/sketchfab/wolfskull.png", embed: "https://sketchfab.com/models/fff98f1d39db4d3d84d9199c58e107af/embed?autostart=1&dnt=1"},
-    {image: "src/assets/sketchfab/campfirebeach.png", embed: "https://sketchfab.com/models/d10994d04a434496b46657b1e141f41e/embed?dnt=1&autostart=1"},
+    {image: icebox, embed: "https://sketchfab.com/models/f96b503849f4477ea1501448d41f361a/embed?autostart=1&dnt=1"},
+    {image: cinderBlocks, embed: "https://sketchfab.com/models/156888bf9f8f4ff69f347d6505f45b4f/embed?dnt=1&autostart=1"},
+    {image: ruinsFire, embed: "https://sketchfab.com/models/4a6640785fac44bda0567b0dda2066e8/embed?autostart=1&dnt=1"},
+    {image: train, embed: "https://sketchfab.com/models/7d3a68adca2f46c198ca075f77b580d4/embed?autostart=1&dnt=1"},
+    {image: wolfskull, embed: "https://sketchfab.com/models/fff98f1d39db4d3d84d9199c58e107af/embed?autostart=1&dnt=1"},
+    {image: campfirebeach, embed: "https://sketchfab.com/models/d10994d04a434496b46657b1e141f41e/embed?dnt=1&autostart=1"},
+    {image: kitchen, embed: "https://sketchfab.com/models/6d4981d48f9d446683929d4bcf010fea/embed?autostart=1&dnt=1"},
+    {image: ruinsfloor, embed: "https://sketchfab.com/models/12d17ba5980947e2bc033355ac103c09/embed?autostart=1&dnt=1"},
+    {image: shelves, embed: "https://sketchfab.com/models/b2cc89202d73470c98ee4d74159cf650/embed?autostart=1&dnt=1"},
+    {image: buildings, embed: "https://sketchfab.com/models/8a5bcbeed46147a583631f0f3731083c/embed?autostart=1&dnt=1"},
 ];
 
 const handleClick = (embedStr: string): void => {
